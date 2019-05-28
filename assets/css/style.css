@@ -1,0 +1,365 @@
+:root {
+	--primary-color: #b5a067;
+}
+
+body {
+	font-family: 'Teko', sans-serif;
+	font-weight: normal;
+	letter-spacing: 1.2px;
+	line-height: 0.9;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header .header-panel {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 9px 0 2px 8px;
+
+}
+
+header .header-panel .navButton {
+	width: 24px;
+	height: 30px;
+	margin-right: 18px;
+	position: relative;
+	outline: none;
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+header .header-panel .navButton span,
+header .header-panel .navButton span:before,
+header .header-panel .navButton span:after {
+	width: 100%;
+	height: 3px;
+	background-color: #151515;
+	transition: 0.3s all;
+}
+
+header .header-panel .navButton span:before,
+header .header-panel .navButton span:after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+header .header-panel .navButton span:before {
+	top: 4px;
+}
+
+header .header-panel .navButton-span:after {
+	bottom: 4px;
+}
+
+header .header-panel .navButton-span.is-opened {
+	transform: rotate(180deg);
+}
+
+header .header-panel .navButton-span.is-opened:before {
+	width: 85%;
+	transform-origin: right;
+	transform: rotate(-45deg);
+	top: 0;
+	left: 3px;
+}
+
+header .header-panel .navButton-span.is-opened:after {
+	width: 85%;
+	transform-origin: right;
+	transform: rotate(45deg);
+	bottom: 0;
+	left: 3px;
+}
+
+
+header .header-panel .navButton-span {
+	display: block;
+}
+
+
+header .header-panel .logo img {
+	max-width: 130px;
+	max-height: 38px;
+}
+
+header nav {
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 53px;
+	bottom: 0;
+	left: -100%;
+	transition: 0.3s all;
+}
+
+header nav.is-collapsed {
+	left:0;
+	z-index: 999;
+	background: white;
+}
+
+header nav ul {
+	list-style-type: none;
+}
+
+
+header nav .socials {
+	display: flex;
+	padding: 10px 50px 11px 70px;
+}
+
+header nav .socials li {
+	margin-right: 20px;
+}
+
+header .socials .fab {
+	font-size: 18px;
+	color: black;
+	transition: 0.3s all;
+}
+
+header .socials .fab:hover {
+	color: var(--primary-color);
+}
+
+header .navigation {
+	padding: 21px 0 0 0;
+	border-top: 1px solid #ccc;
+	margin: 0;
+}
+
+header .navigation li {
+	transition: 0.3s all;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+header .navigation li:hover {
+	background-color: var(--primary-color);
+}
+
+header .navigation li a {
+	display: flex;
+	flex: 1 1 auto;
+	padding: 17px 20px;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	color: #313131;	
+	transition: 0.3s all;
+}
+
+header .navigation li:hover > a {
+	color: white;
+}
+
+header .navigation li i {
+	position: absolute;
+	right: 20px;
+}
+
+header .navigation .active-page {
+	background-color: var(--primary-color);
+}
+
+header .navigation .active-page a {
+	color: white;
+}
+
+main .intro {
+	background-image: url(../img/slider-img1.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 75px 0 70px;
+	text-align: center;
+	color: white;
+	position: relative;
+}
+
+main .intro h6 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+main .intro h2 {
+	margin: 15px 0 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+main .intro .buy-button {
+	margin-bottom: 18px;
+	padding: 20px 50px;
+	border: 0;
+	outline: none;
+	position: relative;
+	z-index: 1;
+	background: var(--primary-color);
+	font-size: 18px;
+	letter-spacing: 1.2px;
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+main .intro button:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: black;
+	position: absolute;
+	transition: 0.3s all;
+	z-index: -1;
+	transform: scale(0);
+}
+
+main .intro button:hover {
+	cursor: pointer;
+}
+
+main .intro button:hover:before {
+	transform: scale(1);
+}
+
+main .intro .slider-nav {
+	width: 155px;
+	height: 47px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+
+}
+
+main .intro .slider-nav ul {
+	margin: 0;
+	padding: 14px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	text-align: center;
+	background-color: white;
+}
+
+main .intro ul li {
+	width: 5px;
+	height: 5px;
+	background: white;
+	border: 3px solid #ccc;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	position: relative;	
+	overflow: hidden;
+	transition: 1.5s all;
+}
+
+
+main .intro li.active {
+	border-color: var(--primary-color);
+}
+
+main .intro li span {
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	outline: none;
+	background: black;
+	border: none;
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transition: 0.3s all;
+	transform: translate(-50%, -50%);
+}
+
+main .intro li:hover {
+	border-color: var(--primary-color);
+}
+
+main .intro li:hover > span {
+	top: 50%;
+}
+
+main .intro li.active span {
+	top: 50%;
+}
+
+main .rooms {
+	padding: 60px 0;
+}
+
+main .rooms h1 {
+	margin: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+main .rooms h4 {
+	margin: 10px 0 3px 0;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 400;
+
+}
+
+main .rooms .heading-panel-nav {
+	display: flex;
+	justify-content: center;
+}
+
+main .rooms .heading-panel-nav .left,
+main .rooms .heading-panel-nav .right {
+	border: 4px solid var(--primary-color);
+	border-radius: 50%;
+	padding: 4px 8px;
+	transition: 0.3s all;
+}
+
+main .rooms .heading-panel-nav .left {
+	margin-right: 6px;
+}
+
+main .rooms .heading-panel-nav div:hover {
+	border-color: black;
+}
+
+main .rooms ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 33px 0 0 0;
+}
+
+main .rooms ul li {
+	display: none;
+}
+
+main .rooms ul li:first-child {
+	display: block;
+}
+
+/* sliku sa h5 elementom i sa spanovima srediti */
+
+
+
