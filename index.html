@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RESORT</title>
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/fonts/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700|Teko:300,400,500,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="header-panel">
-				<button class="navButton" data-nav-button>
-					<span class="navButton-span" data-nav-button-span></span>
+				<button class="nav-button" data-nav-button>
+					<span class="nav-button-icon" data-nav-button-span></span>
 				</button>
 				<div class="logo">
 					<a href="index.html">
@@ -86,7 +86,7 @@
 		<section class="rooms">
 			<div class="container">
 				<div class="heading-panel">
-					<h1>our rooms</h1>
+					<h2>our rooms</h2>
 					<h4>comfortable accommodattion</h4>
 					<div class="heading-panel-decor"></div>
 					<div class="heading-panel-nav">
@@ -140,7 +140,7 @@
 		</section>
 		<section class="about-us">
 			<div class="container">
-				<h1>amenities</h1>
+				<h2>amenities</h2>
 				<h4>what we offer</h4>
 				<div class="offers">
 					<ul>
@@ -200,6 +200,112 @@
 						</li>
 					</ul>
 				</div>
+			</div>
+		</section>
+		<section class="booking">
+			<div class="box-form">
+				<h4>book a room</h4>
+				<form action method="post">
+					<div class="form-wrap">
+						<input type="text" name="name" placeholder="Name">
+						<span class="required">The text field is required.</span>
+					</div>
+					<div class="form-wrap">
+						<input type="telephone" name="phone-number" placeholder="Phone">
+						<span class="required">Only numbers are required</span>
+					</div>
+					<div class="select">
+						<select name="" id="" class="selected arrival-date-date">
+							<option value="">Arrival date</option>
+							<option value="">Januar 15, 2019</option>
+							<option value="">Februar 10, 2019</option>
+							<option value="">March 13, 2019</option>
+						</select>
+						<select name="" id="" class="selected departure-date">
+							<option value="">Departure date</option>
+							<option value="">Februar 25, 2019</option>
+							<option value="">March 2, 2019</option>
+							<option value="">April 21, 2019</option>
+						</select>
+						<div class="select-wrap">
+							<select name="" id="" class="selected adults">
+								<option value="">Adults</option>
+								<option value="">2 Adults</option>
+								<option value="">3 Adults</option>
+								<option value="">4 Adults</option>
+							</select>
+							<select name="" id="" class="selected kids">
+								<option value="">Children</option>
+								<option value="">1 Children</option>
+								<option value="">2 Children</option>
+								<option value="">3 Children</option>
+							</select>
+						</div>
+						<button class="check">Check Availability</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container">
+				<h2>Gallery</h2>
+				<h4>Hotel gallery</h4>
+				<ul class="gallery-list">
+					<li>
+						<img src="assets/img/gallery1.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">affordable room rates</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gallery2.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">best room service</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gallery3.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">spectacular interior</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gallery4.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">diverse amenities</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gallery5.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">comfortable rooms</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+					<li>
+						<img src="assets/img/gallery6.jpg" alt="">
+						<div class="caption">
+							<h5>
+								<a href="#">friendly atmosphere</a>
+							</h5>
+							<button>read more</button>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 	</main>
