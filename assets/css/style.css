@@ -322,13 +322,15 @@ main .intro li.active span {
 }
 
 main .rooms,
-main .about-us {
+main .about-us,
+main .informations {
 	padding: 60px 0;
 }
 
 main .rooms h2,
 main .about-us h2,
-main .gallery h2 {
+main .gallery h2,
+main .informations h2 {
 	margin: 0;
 	font-size: 50px;
 	text-transform: uppercase;
@@ -338,7 +340,8 @@ main .gallery h2 {
 main .rooms h4,
 main .about-us h4,
 main .booking h4,
-main .gallery h4 {
+main .gallery h4,
+main .informations h4 {
 	margin: 10px 0 3px 0;
 	font-size: 28px;
 	text-transform: uppercase;
@@ -369,10 +372,11 @@ main .rooms .heading-panel-nav div:hover {
 
 main .rooms-list,
 main .about-us .offers ul,
-main .gallery .gallery-list {
+main .gallery .gallery-list,
+main .informations .steps-list  {
 	list-style-type: none;
 	padding: 0;
-	margin: 33px 0 0 0;
+	margin: 40px 0 0 0;
 }
 
 main .rooms ul li {
@@ -384,7 +388,8 @@ main .rooms ul li:first-child {
 }
 
 main .rooms h5,
-main .about-us h5 {
+main .about-us h5,
+main .informations h5 {
 	margin: 18px 0 0;
     font-size: 22px;
     font-weight: 400;
@@ -392,14 +397,16 @@ main .about-us h5 {
 }
 
 main .rooms h5 a,
-main .about-us h5 a {
+main .about-us h5 a,
+main .informations h5 a {
     text-decoration: none;
     color: #151515;
     transition: 0.3s all;
 }
 
 main .rooms h5 a:hover,
-main .about-us h5 a:hover {
+main .about-us h5 a:hover,
+main .informations h5 a:hover {
 	color: var(--primary-color);
 }
 
@@ -424,7 +431,8 @@ main .rooms .price-wrapper .date {
 	color: #9b9b9b;
 }
 
-main .about-us {
+main .about-us,
+main .informations {
 	background-color: #f7f7f7;
 }
 
@@ -563,6 +571,10 @@ main .gallery .caption {
 	text-transform: uppercase;
 }
 
+main .gallery h5 {
+	margin: 0;
+}
+
 main .gallery .caption a {
 	color: var(--primary-color);
 	text-decoration: none;
@@ -572,11 +584,12 @@ main .gallery .caption a {
 }
 
 main .gallery .caption button {
+	margin-top: 12px;
 	padding: 16px 30.5px;
 	text-transform: uppercase;
 	border: 1px solid #ffffff;
 	font-weight: 600;
-	color: #303233;
+	color: #151515;
 	background: #fff;
 	outline: none;
 	transition: 0.3s all;
@@ -588,5 +601,44 @@ main .gallery .caption button:hover {
 	background: transparent;
 	color: #fff;
 	border: 1px solid #fff;
+}
+
+main .informations .steps-list li {
+	margin-bottom: 30px;
+}
+
+main .informations .article {
+	padding: 20px 22px 10px;
+	text-align: left;
+	background-color: #fff;
+	position: relative;
+}
+
+main .informations i {
+	color: var(--primary-color);
+	font-size: 42px;
+}
+
+main .informations p {
+	margin-top: 10px 0 0;
+	color: #9b9b9b;
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	line-height: 1.71429;
+}
+
+main .informations .article span {
+	min-width: 45px;
+	padding: 6px 3px 0 7px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 36px;
+	font-weight: 400;
+	font-family: 'Teko', sans-serif;
+	line-height: 1;
+	text-align: center;
+	background: #f7f7f7;
+	color: #9b9b9b;
 }
 
