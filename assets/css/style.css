@@ -27,11 +27,12 @@ header {
 	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 }
 header .header-panel {
+	padding: 9px 0 8px 4px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 9px 0 2px 8px;
+	line-height: 0.6;
 
 }
 
@@ -63,7 +64,7 @@ header .header-panel .nav-button span:after {
 }
 
 header .header-panel .nav-button span:before {
-	top: 4px;
+	top: 3px;
 }
 
 header .header-panel .nav-button-icon:after {
@@ -194,7 +195,7 @@ main .intro {
 	background-image: url(../img/slider-img1.jpg);
 	background-position: center;
 	background-size: cover;
-	padding: 75px 0 70px;
+	padding: 117px 0 62px;
 	text-align: center;
 	color: white;
 	position: relative;
@@ -205,17 +206,20 @@ main .intro h6 {
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
+	letter-spacing: .1em;
 }
 
 
 main .intro h2 {
-	margin: 15px 0 20px;
+	margin: 17px 0 18px;
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 36px;
+	letter-spacing: 0.05em;
 }
 
-main .intro .buy-button {
+main .intro .buy-button,
+main .achievements .experience .btn-primary {
 	margin-bottom: 18px;
 	padding: 20px 52px;
 	border: 0;
@@ -231,8 +235,9 @@ main .intro .buy-button {
 	transition: color 0.3s;
 }
 
-main .intro button:before,
-main .booking form .select .check:before {
+main .intro .buy-button:before,
+main .booking form .select .submit:before,
+main .achievements .experience .btn-primary:before {
 	content: '';
 	width: 100%;
 	height: 100%;
@@ -245,13 +250,16 @@ main .booking form .select .check:before {
 	transform: scale(0);
 }
 
-main .intro button:hover,
-main .booking form .select .check:hover {
+main .intro .buy-button:hover,
+main .booking form .select .submit:hover,
+main .subscribe form .submit:hover,
+main .achievements .experience .btn-primary:hover {
 	cursor: pointer;
 }
 
 main .intro button:hover:before,
-main .booking form .select .check:hover:before {
+main .booking form .select .submit:hover:before,
+main .achievements .experience .btn-primary:hover:before {
 	transform: scale(1);
 }
 
@@ -267,18 +275,18 @@ main .intro .slider-nav {
 
 main .intro .slider-nav ul {
 	margin: 0;
-	padding: 14px 15px;
+	padding: 18px 15px 9px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	list-style-type: none;
 	text-align: center;
 	background-color: white;
 }
 
 main .intro ul li {
-	width: 5px;
-	height: 5px;
+	width: 4px;
+	height: 4px;
 	background: white;
 	border: 3px solid #ccc;
 	border-radius: 50%;
@@ -323,14 +331,18 @@ main .intro li.active span {
 
 main .rooms,
 main .about-us,
-main .informations {
+main .informations,
+main .team,
+main .achievements,
+main .faq {
 	padding: 60px 0;
 }
 
 main .rooms h2,
 main .about-us h2,
 main .gallery h2,
-main .informations h2 {
+main .informations h2,
+main .team h2 {
 	margin: 0;
 	font-size: 50px;
 	text-transform: uppercase;
@@ -341,7 +353,8 @@ main .rooms h4,
 main .about-us h4,
 main .booking h4,
 main .gallery h4,
-main .informations h4 {
+main .informations h4,
+main .team h4 {
 	margin: 10px 0 3px 0;
 	font-size: 28px;
 	text-transform: uppercase;
@@ -373,7 +386,8 @@ main .rooms .heading-panel-nav div:hover {
 main .rooms-list,
 main .about-us .offers ul,
 main .gallery .gallery-list,
-main .informations .steps-list  {
+main .informations .steps-list,
+main .team .team-list  {
 	list-style-type: none;
 	padding: 0;
 	margin: 40px 0 0 0;
@@ -540,7 +554,8 @@ main .booking form .select .select-wrap {
 	flex-direction: column;
 }
 
-main .booking form .select .check {
+main .booking form .select .submit,
+main .subscribe form .submit {
 	margin-top: 10px;
 	padding: 17px 33px 15px;
 	background-color: var(--primary-color);
@@ -642,3 +657,375 @@ main .informations .article span {
 	color: #9b9b9b;
 }
 
+main .subscribe {
+	padding: 60px 0;
+	position: relative;
+	background: url(../img/newsletter-img.jpg);
+	background-size: cover;
+	background-position: center-center;
+	color: #fff;
+}
+
+main .subscribe h3,
+main .experience h3 {
+	text-transform: uppercase;
+	font-family: 'Teko', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	color: #fff;
+}
+
+main .subscribe p {
+	margin: 16px 0 0;
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	line-height: 1.71429;
+}
+
+main .subscribe input {
+	width: 100%;
+	padding: 17px 22px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.34);
+	outline: none;
+	border-color: transparent;
+	color: #fff;
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+main .subscribe input::placeholder {
+	color: #fff;
+}
+
+main .subscribe .submit {
+	width: 100%;
+	transition: 0.3s all;
+}
+
+main .subscribe .submit:hover {
+	background: black;
+}
+
+main .team .team-list {
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .team li {
+	width: 270px;
+	margin-bottom: 100px;
+	padding: 70px 0 50px;
+	background: #f7f7f7;
+	position: relative;
+}
+
+main .team li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+main .team li .person-image {
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	padding: 10px;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background: #fff;
+} 
+
+main .team li .person-image a {
+	display: block;
+}
+
+main .team li .person-image img {
+	border-radius: 50%;
+}
+
+main .team li .person-caption {
+	padding: 22px 0 0;
+}
+
+
+main .team li .person-caption h5 {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+main .team li .person-caption a {
+	color: #151515;
+	text-decoration: none;
+	transition: 0.3s all;
+}
+
+main .team li .person-caption a:hover {
+	color: var(--primary-color);
+}
+
+main .team li .person-caption .team-status {
+	display: block;
+	margin: 10px 0;
+	color: var(--primary-color);
+	font-family: 'Popins', sans-serif;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 1.71429;
+}
+
+
+main .team li .person-caption .phone-number {
+	font-size: 18px;
+}
+
+main .achievements {
+	background: #131935;
+}
+
+main .achievements .big-img {
+	margin-bottom: 50px;
+}
+
+main .achievements .big-img .text-img {
+	height: 270px;
+	display: inline-block;
+	font-size: 380px;
+	text-decoration: none;
+	line-height: 85%;
+	font-weight: 500;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-image: url(../img/text-image.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+main .achievements .experience {
+	width: 320px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+main .achievements .experience h3 {
+	margin: 0;
+	padding-left: 30px;
+	position: relative;
+	line-height: 1.2;
+}
+
+main .achievements .experience h3:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 4px;
+	height: 78%;
+	background: var(--primary-color);
+}
+
+main .achievements .experience p {
+	margin: 8px 0;
+	color: rgba(255, 255, 255, 0.3);
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.71429;
+	letter-spacing: 2px;
+}
+
+main .achievements .experience .btn-primary {
+	margin-top: 30px;
+	width: 200px;
+}
+
+main .achievements .counter {
+	width: 75%;
+	margin: 0 auto;
+}
+
+main .achievements .counter ul {
+	margin-top: 25px;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+
+main .achievements .counter ul li {
+	margin-bottom: 25px;
+	padding: 0 0 30px;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+main .achievements .counter ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+main .achievements .counter ul  .big {
+	font-size: 110px;
+	font-weight: 300;
+}
+
+main .achievements .counter ul  .simbol {
+	font-size: 70px;
+	text-transform: uppercase;
+}
+
+main .achievements .counter ul .counter-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+} 
+
+main .achievements .clients {
+	margin-top: 50px;
+}
+
+
+main .achievements .clients .clients-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .achievements .clients li {
+	max-width: 270px;
+	max-height: 117px;
+	margin-bottom: 30px;
+	border: 1px solid rgba(255,255,255,.3);
+	box-sizing: border-box;
+}
+
+main .achievements .clients li a {
+	display: block;
+	box-sizing: border-box;
+}
+
+main .achievements .clients li img {
+	opacity: .5;
+}
+
+main .achievements .clients li:last-child {
+	margin-bottom: 0;
+}
+
+main .faq h2 {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 400;
+	color: #151515;
+	margin: 0;
+}
+
+main .faq h2 span {
+	font-size: 28px;
+}
+
+main .faq .video {
+	margin-top: 50px;
+	position: relative;
+}
+
+main .faq .video img {
+	width: 100%;
+}
+
+main .faq .video .play {
+	width: 60px;
+	height: 60px;
+	padding: 6px 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background: rgba(255,255,255,.61);
+	transition: 0.3s all;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .faq .video .play:hover {
+	background: var(--primary-color);
+	cursor: pointer;
+}
+
+main .faq .video .play:hover> .fa-play {
+	color: #fff;
+}
+
+main .faq .templates {
+	margin-top: 30px;
+}
+
+main .faq .templates .cards {
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+}
+
+main .faq .templates .card-title {
+	border: 1px solid #e1e1e1;
+	margin-bottom: 15px;
+	position: relative;
+
+	
+}
+
+main .faq .templates .card-title:last-child {
+	margin-bottom: 0;
+}
+
+main .faq .templates .card-title a {
+	display: block;
+	padding: 23px 72px 17px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #151515;
+	letter-spacing: 1.1;
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 400;
+	transition: 0.3s all;
+}
+
+main .faq .templates .card-title:hover > a {
+	color: var(--primary-color);
+}
+
+main .faq .templates .card-title .card-arrow {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	border: 4px solid var(--primary-color);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .faq .templates .card-title .card-arrow:hover {
+	cursor: pointer;
+}
