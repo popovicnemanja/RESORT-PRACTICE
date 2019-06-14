@@ -334,7 +334,9 @@ main .about-us,
 main .informations,
 main .team,
 main .achievements,
-main .faq {
+main .faq,
+main .comments,
+main .our-blog {
 	padding: 60px 0;
 }
 
@@ -342,7 +344,9 @@ main .rooms h2,
 main .about-us h2,
 main .gallery h2,
 main .informations h2,
-main .team h2 {
+main .team h2,
+main .comments h2,
+main .our-blog h2 {
 	margin: 0;
 	font-size: 50px;
 	text-transform: uppercase;
@@ -354,7 +358,9 @@ main .about-us h4,
 main .booking h4,
 main .gallery h4,
 main .informations h4,
-main .team h4 {
+main .team h4,
+main .comments h4,
+main .our-blog h4 {
 	margin: 10px 0 3px 0;
 	font-size: 28px;
 	text-transform: uppercase;
@@ -362,13 +368,17 @@ main .team h4 {
 
 }
 
-main .rooms .heading-panel-nav {
+main .rooms .heading-panel-nav,
+main .comments .heading-panel-nav {
 	display: flex;
 	justify-content: center;
 }
 
 main .rooms .heading-panel-nav .left,
-main .rooms .heading-panel-nav .right {
+main .rooms .heading-panel-nav .right,
+main .comments .heading-panel-nav .left,
+main .comments .heading-panel-nav .right
+ {
 	border: 4px solid var(--primary-color);
 	border-radius: 50%;
 	padding: 4px 8px;
@@ -379,7 +389,8 @@ main .rooms .heading-panel-nav .left {
 	margin-right: 6px;
 }
 
-main .rooms .heading-panel-nav div:hover {
+main .rooms .heading-panel-nav div:hover,
+main .comments .heading-panel-nav div:hover {
 	border-color: black;
 }
 
@@ -446,7 +457,8 @@ main .rooms .price-wrapper .date {
 }
 
 main .about-us,
-main .informations {
+main .informations,
+main .comments {
 	background-color: #f7f7f7;
 }
 
@@ -937,7 +949,7 @@ main .faq h2 span {
 }
 
 main .faq .video {
-	margin-top: 50px;
+	margin-top: 35px;
 	position: relative;
 }
 
@@ -973,11 +985,12 @@ main .faq .video .play:hover> .fa-play {
 }
 
 main .faq .templates {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 main .faq .templates .cards {
 	padding: 0;
+	margin: 0;
 	list-style-type: none;
 	text-align: left;
 }
@@ -1027,5 +1040,127 @@ main .faq .templates .card-title .card-arrow {
 }
 
 main .faq .templates .card-title .card-arrow:hover {
+	cursor: pointer;
+}
+
+
+main .comments .article {
+	margin-top: 35px;
+	border: 1px solid #ccc;
+	padding: 30px 15px;
+}
+
+main .comments .article .client {
+	display: flex;
+	align-items: center;
+}
+
+main .comments .article .client-image img {
+	border-radius: 50%;
+}
+
+main .comments .article .client-description {
+	margin-left: 24px;
+	text-align: left;
+	line-height: 1;
+}
+
+main .comments .article .client-description a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #151515;
+	transition: 0.3s all;
+}
+
+main .comments .article .client-description a:hover {
+	color: var(--primary-color);
+}
+
+main .comments .article .client-description .client-status {
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3;
+	color: var(--primary-color);
+}
+
+main .comments .article .client-comment p {
+	text-align: left;
+	line-height: 1.71;
+	font-family: 'Popins', sans-serif;
+	font-size: 14px;
+	color: #151515;
+}
+
+main .our-blog .news-list {
+	padding: 0;
+	margin: 40px 0 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .our-blog .news-item {
+	padding: 15px;
+	margin-bottom: 30px;
+	max-width: 300px;
+	border: 1px solid #e1e1e1;
+	box-sizing: border-box;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+main .our-blog .news-item::last-child {
+	margin-bottom: 0;
+}
+
+main .our-blog .news-item img {
+	width: 100%;
+}
+
+main .our-blog .news-item .date {
+	margin: 20px 0;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Teko', sans-serif;
+	color: #9b9b9b;
+	line-height: 0.75em;
+}
+
+main .our-blog .news-item .news-title {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+main .our-blog .news-item .badge {
+	padding: 7px 9px 4px 19.5px;
+	text-align: center;
+	display: inline-block;
+	background: var(--primary-color);
+	color: #fff;
+	line-height: 1.2;
+	position: relative;
+	transition: 0.3s all;
+	overflow: hidden;
+}
+
+main .our-blog .news-item .badge::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	top: 7px;
+	left: -7px;
+	font-weight: 400;
+}
+
+main .our-blog .news-item .badge:hover {
+	background: black;
 	cursor: pointer;
 }
