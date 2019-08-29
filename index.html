@@ -8,10 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,600i,700|Teko:300,400,500,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 	<header>
-		<div class="container">
-			
 			<div class="header-panel">
 				<button class="nav-button" data-nav-button>
 					<span class="nav-button-icon" data-nav-button-span></span>
@@ -65,23 +64,21 @@
 				</ul>
 
 			</nav>
-		</div>
-
 	</header>
 	
 	<main>
 		
 		<div class="intro">
 			<div class="container">
-				<h6>comfortable rooms</h6>
-				<h2>experience the highest level of coziness</h2>
+				<h6>Comfortable rooms</h6>
+				<h2>Experience the highest level of coziness</h2>
 				<button class="buy-button">Book now</button>
 				<nav class="slider-nav">
 					<ul>
-						<li class="active">
+						<li>
 							<span></span>
 						</li>
-						<li>
+						<li class="active">
 							<span></span>
 						</li>
 						<li>
@@ -95,8 +92,8 @@
 		<section class="rooms">
 			<div class="container">
 				<div class="heading-panel">
-					<h2>our rooms</h2>
-					<h4>comfortable accommodattion</h4>
+					<h2>Our rooms</h2>
+					<h4>Comfortable accommodation</h4>
 					<div class="heading-panel-decor"></div>
 					<div class="heading-panel-nav">
 						<div class="left">
@@ -109,8 +106,10 @@
 				</div>
 				<ul class="rooms-list">
 					<li>
-						<img src="assets/img/room1.jpg" alt="">
-						<h5><a href="#">double room</a></h5>
+						<a href="#">
+							<img src="assets/img/room1.jpg" alt="">
+						</a>
+						<h5><a href="#" class="rooms-title">Double room</a></h5>
 						<div class="price-wrapper">
 							<span class="price">$380</span>
 							<span class="divider">/</span>
@@ -118,30 +117,24 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/room2.jpg" alt="">
-						<h5><a href="#">double room</a></h5>
+						<a href="#">
+							<img src="assets/img/room2.jpg" alt="">
+						</a>
+						<h5><a href="#" class="rooms-title">Executive room</a></h5>
 						<div class="price-wrapper">
-							<span class="price">$380</span>
+							<span class="price">$450</span>
 							<span class="divider">/</span>
-							<span class="date">night</span>
+							<span class="date">Night</span>
 						</div>
-					</li>
-					<li>
-						<img src="assets/img/room3.jpg" alt="">
-						<h5><a href="#">double room</a></h5>
+						<li>
+						<a href="#">
+							<img src="assets/img/room3.jpg" alt="">
+						</a>
+						<h5><a href="#" class="rooms-title">Hollywood twin room</a></h5>
 						<div class="price-wrapper">
-							<span class="price">$380</span>
+							<span class="price">$350</span>
 							<span class="divider">/</span>
-							<span class="date">night</span>
-						</div>
-					</li>
-					<li>
-						<img src="assets/img/room4.jpg" alt="">
-						<h5><a href="#">double room</a></h5>
-						<div class="price-wrapper">
-							<span class="price">$380</span>
-							<span class="divider">/</span>
-							<span class="date">night</span>
+							<span class="date">Night</span>
 						</div>
 					</li>
 				</ul>
@@ -150,8 +143,11 @@
 		
 		<section class="about-us">
 			<div class="container">
-				<h2>amenities</h2>
-				<h4>what we offer</h4>
+				<div class="heading-panel">
+					<h2>amenities</h2>
+					<h4>what we offer</h4>
+					<div class="heading-panel-decor"></div>
+				</div>
 				<div class="offers">
 					<ul>
 						<li>
@@ -214,57 +210,64 @@
 		</section>
 		
 		<section class="booking">
-			<div class="box-form">
-				<h4>book a room</h4>
-				<form action method="post">
-					<div class="form-wrap">
-						<input type="text" name="name" placeholder="Name">
-						<span class="required">The text field is required.</span>
-					</div>
-					<div class="form-wrap">
-						<input type="telephone" name="phone-number" placeholder="Phone">
-						<span class="required">Only numbers are required</span>
-					</div>
-					<div class="select">
-						<select name="" id="" class="selected arrival-date-date">
-							<option value="">Arrival date</option>
-							<option value="">Januar 15, 2019</option>
-							<option value="">Februar 10, 2019</option>
-							<option value="">March 13, 2019</option>
-						</select>
-						<select name="" id="" class="selected departure-date">
-							<option value="">Departure date</option>
-							<option value="">Februar 25, 2019</option>
-							<option value="">March 2, 2019</option>
-							<option value="">April 21, 2019</option>
-						</select>
-						<div class="select-wrap">
-							<select name="" id="" class="selected adults">
-								<option value="">Adults</option>
-								<option value="">2 Adults</option>
-								<option value="">3 Adults</option>
-								<option value="">4 Adults</option>
-							</select>
-							<select name="" id="" class="selected kids">
-								<option value="">Children</option>
-								<option value="">1 Children</option>
-								<option value="">2 Children</option>
-								<option value="">3 Children</option>
-							</select>
+			<div class="container">
+				<div class="box-form">
+					<h4>book a room</h4>
+					<form action method="post">
+						<div class="form-wrap">
+							<input type="text" name="name" placeholder="Name">
+							<span class="required">The text field is required.</span>
 						</div>
-						<button class="submit">Check Availability</button>
-					</div>
-				</form>
+						<div class="form-wrap">
+							<input type="telephone" name="phone-number" placeholder="Phone">
+							<span class="required">Only numbers are required</span>
+						</div>
+						<div class="select">
+							<select name="" id="" class="selected arrival-date-date">
+								<option value="">Arrival date</option>
+								<option value="">Januar 15, 2019</option>
+								<option value="">Februar 10, 2019</option>
+								<option value="">March 13, 2019</option>
+							</select>
+							<select name="" id="" class="selected departure-date">
+								<option value="">Departuro date</option>
+								<option value="">Februar 25, 2019</option>
+								<option value="">March 2, 2019</option>
+								<option value="">April 21, 2019</option>
+							</select>
+							<div class="select-wrap">
+								<select name="" id="" class="selected adults">
+									<option value="">Adults</option>
+									<option value="">2 Adults</option>
+									<option value="">3 Adults</option>
+									<option value="">4 Adults</option>
+								</select>
+								<select name="" id="" class="selected kids">
+									<option value="">Children</option>
+									<option value="">1 Children</option>
+									<option value="">2 Children</option>
+									<option value="">3 Children</option>
+								</select>
+							</div>
+							<button class="submit">Check Availability</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 		
 		<section class="gallery">
 			<div class="container">
-				<h2>Gallery</h2>
-				<h4>Hotel gallery</h4>
+				<div class="gallery-heading-panel">
+					<h2>Gallery</h2>
+					<h4>Hotel gallery</h4>
+					<div class="heading-panel-decor"></div>
+				</div>
 				<ul class="gallery-list">
 					<li>
-						<img src="assets/img/gallery1.jpg" alt="">
+						<a href="#">
+							<img src="assets/img/gallery1.jpg" alt="">
+						</a>
 						<div class="caption">
 							<h5>
 								<a href="#">affordable room rates</a>
@@ -273,7 +276,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/gallery2.jpg" alt="">
+						<a href="#">
+							<img src="assets/img/gallery2.jpg" alt="">
+						</a>
 						<div class="caption">
 							<h5>
 								<a href="#">best room service</a>
@@ -282,7 +287,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/gallery3.jpg" alt="">
+						<a href="">
+							<img src="assets/img/gallery3.jpg" alt="">
+						</a>
 						<div class="caption">
 							<h5>
 								<a href="#">spectacular interior</a>
@@ -291,7 +298,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/gallery4.jpg" alt="">
+						<a href="#">
+							<img src="assets/img/gallery4.jpg" alt=""></a>
+						</a>
 						<div class="caption">
 							<h5>
 								<a href="#">diverse amenities</a>
@@ -300,7 +309,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/gallery5.jpg" alt="">
+						<a href="#">
+							<img src="assets/img/gallery5.jpg" alt="">
+						</a>						
 						<div class="caption">
 							<h5>
 								<a href="#">comfortable rooms</a>
@@ -309,7 +320,9 @@
 						</div>
 					</li>
 					<li>
-						<img src="assets/img/gallery6.jpg" alt="">
+						<a href="#">
+							<img src="assets/img/gallery6.jpg" alt="">
+						</a>
 						<div class="caption">
 							<h5>
 								<a href="#">friendly atmosphere</a>
@@ -323,61 +336,65 @@
 		
 		<section class="informations">
 			<div class="container">
-				<h2>4 easy steps</h2>
-				<h4>how to book a room</h4>
+				<div class="informations-heading-panel">
+					<h2>4 easy steps</h2>
+					<h4>how to book a room</h4>
+					<div class="heading-panel-decor"></div>
+				</div>
 				<ul class="steps-list">
 					<li>
-						<div class="article">
+						<article>
 							<i class="far fa-list-alt"></i>
 							<h5><a href="#">fill out an online form</a></h5>
 							<p>
 								Everything starts with the filling out the booking form on our website.
 							</p>
 							<span>01</span>
-						</div>
+						</article>
 					</li>
 					<li>
-						<div class="article">
+						<article>
 							<i class="fas fa-phone"></i>
 							<h5><a href="#">confirm your booking</a></h5>
 							<p>
 								After that, our reseptionists will contact you to confirm your booking.
 							</p>
 							<span>02</span>
-						</div>
+						</article>
 					</li>
 					<li>
-						<div class="article">
+						<article>
 							<i class="far fa-calendar-check"></i>
 							<h5><a href="#">select your room</a></h5>
 							<p>
 								You can also select an exact room type during your booking confirmation.
 							</p>
 							<span>03</span>
-						</div>
+						</article>
 					</li>
 					<li>
-						<div class="article">
+						<article>
 							<i class="far fa-star"></i>
 							<h5><a href="#">check in at the hotel</a></h5>
 							<p>
 								When you arrive at the hotel, don`t forget to ckeck in at the front desk.
 							</p>
 							<span>04</span>
-						</div>
+						</article>
 					</li>
 				</ul>
 			</div>
 		</section>
 		
 		<section class="subscribe">
+			<div class="subscribe-wrapper"></div>
 			<div class="container">
 				<h3>Subscribe to our newsletter</h3>
 				<p>
 					Leave your e-mail in the form below to sign up to our newsletter and receive regular news, updates, and special offers.
 				</p>
-				<form action metod="post">
-					<input type="text" placeholder="Enter your e-mail">
+				<form action metod="post" class="contact-form">
+					<input type="text" placeholder="Enter Your E-mail">
 					<button class="submit">subscribe</button>
 				</form>
 			</div>
@@ -385,51 +402,61 @@
 
 		<section class="team">
 			<div class="container">
-				<h2>our team</h2>
-				<h4>true professionals</h4>
+				<div class="team-heading-panel">
+					<h2>our team</h2>
+					<h4>true professionals</h4>
+					<div class="heading-panel-decor"></div>
+				</div>
 				<ul class="team-list">
 					<li>
-						<div class="person-image">
-							<a href=""><img src="assets/img/team1.jpg" alt=""></a>
-							
-						</div>
-						<div class="person-caption">
-							<h5><a href="#">Samuel miller</a></h5>
-							<span class="team-status">general menager</span>
-							<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
-						</div>
-					</li>
-					<li>
-						<div class="person-image">
-							<a href=""><img src="assets/img/team2.jpg" alt=""></a>
-							
-						</div>
-						<div class="person-caption">
-							<h5><a href="#">Peter mcmillanp</a></h5>
-							<span class="team-status">assistant menager</span>
-							<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+						<div class="personal-card">
+							<div class="person-image">
+								<a href=""><img src="assets/img/team1.jpg" alt=""></a>
+							</div>
+							<div class="person-caption">
+								<h5><a href="#">Samuel miller</a></h5>
+								<span class="team-status">general menager</span>
+								<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+							</div>
 						</div>
 					</li>
 					<li>
-						<div class="person-image">
-							<a href=""><img src="assets/img/team3.jpg" alt=""></a>
-							
-						</div>
-						<div class="person-caption">
-							<h5><a href="#">Jill peterson</a></h5>
-							<span class="team-status">Front office menager</span>
-							<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+						<div class="personal-card">
+							<div class="person-image">
+								<a href=""><img src="assets/img/team2.jpg" alt=""></a>
+								
+							</div>
+							<div class="person-caption">
+								<h5><a href="#">Peter mcmillan</a></h5>
+								<span class="team-status">assistant menager</span>
+								<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+							</div>
 						</div>
 					</li>
 					<li>
-						<div class="person-image">
-							<a href=""><img src="assets/img/team5.jpg" alt=""></a>
-							
+						<div class="personal-card">
+							<div class="person-image">
+								<a href=""><img src="assets/img/team3.jpg" alt=""></a>
+								
+							</div>
+							<div class="person-caption">
+								<h5><a href="#">Jill peterson</a></h5>
+								<span class="team-status">Front office menager</span>
+								<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+							</div>
 						</div>
-						<div class="person-caption">
-							<h5><a href="#">Samuel miller</a></h5>
-							<span class="team-status">Consierge</span>
-							<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+					</li>
+					<li>
+						<div class="personal-card">
+							<div class="person-image">
+								<a href=""><img src="assets/img/team5.jpg" alt=""></a>
+								
+							</div>
+							<div class="person-caption">
+								<h5><a href="#">Samuel miller</a></h5>
+								<span class="team-status">Consiergo</span>
+								<span class="phone-number"><a href="#">+ 1 323-913-4688</a></span>
+							</div>
 						</div>
 					</li>
 				
@@ -489,7 +516,11 @@
 		
 		<section class="faq">
 			<div class="container">
-				<h2>Faq </br><span>your questions</span></h2>
+				<div class="faq-heading-panel">
+				<h2>Faq</h2>
+					<h4>Your questions</h4>
+					<div class="heading-panel-decor"></div>
+				</div>
 				<div class="video"><img src="assets/img/video.jpg" alt="">
 					<button class="play"><i class="fas fa-play"></i></button>
 				</div>
@@ -502,7 +533,7 @@
 							</div>
 						</li>
 						<li class="card-title">
-							<a href="#">In what formats are your templates <br> available</a> 
+							<a href="#">In what formats are your templates available?</a> 
 							<div class="card-arrow">
 								<i class="fas fa-plus"></i>
 							</div>
@@ -520,9 +551,10 @@
 
 		<section class="comments">
 			<div class="container">
-				<div class="heading-panel">
+				<div class="comments-heading-panel">
 					<h2>Testimonials</h2>
 					<h4>what our clients say</h4>
+					<div class="heading-panel-decor"></div>
 					<div class="heading-panel-nav">
 						<div class="left">
 							<i class="fas fa-angle-left"></i>
@@ -532,7 +564,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="article">
+				<article>
 					<div class="client">
 						<div class="client-image"><img src="assets/img/client.jpg" alt=""></div>
 						<div class="client-description">
@@ -546,15 +578,16 @@
 						</p>
 					</div>
 					
-				</div>
+				</article>
 			</div>
 		</section>
 
 		<section class="our-blog">
 			<div class="container">
-				<div class="heading-panel">
+				<div class="our-blog-heading-panel">
 					<h2>Our blog</h2>
 					<h4>Popular news</h4>
+					<div class="heading-panel-decor"></div>
 				</div>
 				<ul class="news-list">
 					<li class="news-item">
@@ -572,7 +605,7 @@
 						<div class="news-item-img">
 							<a href="#"><img src="assets/img/blog-img2.jpg" alt=""></a>
 						</div>
-						<div class="news-items-description">
+						<div class="news-item-description">
 							<div class="date">may 04, 2019</div>
 							<p class="news-title"><a href="#">20 Benefits of visiting spa & massage center at resort hotel</a></p>
 							<div class="badge">News</div>
@@ -582,7 +615,7 @@
 						<div class="news-item-img">
 							<a href="#"><img src="assets/img/blog-img3.jpg" alt=""></a>
 						</div>
-						<div class="description">
+						<div class="news-item-description">
 							<div class="date">may 04, 2019</div>
 							<p class="news-title"><a href="#">15 Useful hotel safety tips you should not ignore</a></p>
 							<div class="badge">News</div>
@@ -592,7 +625,7 @@
 						<div class="news-item-img">
 							<a href="#"><img src="assets/img/blog-img4.jpg" alt=""></a>
 						</div>
-						<div class="description">
+						<div class="news-item-description">
 							<div class="date">may 04, 2019</div>
 							<p class="news-title"><a href="#">5 Simple tricks for getting stellar hotel service</a></p>
 							<div class="badge">News</div>
@@ -603,36 +636,38 @@
 		</section>
 	</main>
 	<footer>
-		<div class="footer-corporate">
-			<div class="container">
-				<h5>Our contacts</h5>
-				<ul class="footer-contacts">
-					<li class="unit">
-						<div class="unit-left">
-							<i class="fas fa-phone"></i>
-						</div>
-						<div class="unit-body">
-							<a href="#" class="phone-number">+1 323-913-4688</a>
-						</div>
-						
-					</li>
-					<li class="unit">
-						<div class="unit-left">
-							<i class="fas fa-envelope"></i>
-						</div>
-						<div class="unit-body">
-							<a href="#" class="mail">info@demolink.org</a>
-						</div>
-					</li>
-					<li class="unit">
-						<div class="unit-left">
-							<i class="fas fa-location-arrow"></i>
-						</div>
-						<div class="unit-body">
-							<a href="#" class="location">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
-						</div>
-					</li>
-				</ul>
+		<div class="container">
+			<div class="footer-corporate">
+				<div class="footer-contacts">
+					<h5>Our contacts</h5>
+					<ul class="contacts-list">
+						<li class="unit">
+							<div class="unit-left">
+								<i class="fas fa-phone"></i>
+							</div>
+							<div class="unit-body">
+								<a href="#" class="phone-number">+1 323-913-4688</a>
+							</div>
+							
+						</li>
+						<li class="unit">
+							<div class="unit-left">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="unit-body">
+								<a href="#" class="mail">info@demolink.org</a>
+							</div>
+						</li>
+						<li class="unit">
+							<div class="unit-left">
+								<i class="fas fa-location-arrow"></i>
+							</div>
+							<div class="unit-body">
+								<a href="#" class="location">4730 Crystal Springs Dr, Los Angeles, CA 90027</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 				<div class="footer-news">
 					<h5>Popular news</h5>
 					<article class="post">
@@ -674,22 +709,22 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<ul class="footer-socials">
-				<li>
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-google-plus-g"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
-			<div class="copyrights">
-				<p><span>©&nbsp;</span>2019 Resort . All rights reserved</p>
-			</div>
+					<li>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+				<div class="copyrights">
+					<p><span>©&nbsp;</span>2019 Resort . All rights reserved</p>
+				</div>
 			</div>
 		</div>
 	</footer>
